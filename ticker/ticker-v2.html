@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<meta charset=utf-8 />
+<title>Ticker</title>
+<link  rel="stylesheet" href="styles/styles.css" type="text/css" />
+<script>
+<<<<<<< HEAD
+    $(function () {
+=======
+$(function(){
+
+	var interval = setInterval(animationUp, 3000);
+	
+	//$('.innerContent').hover(function(){
+	//	clearInterval(interval);	
+	//	}, function(){
+	//   interval = setInterval(animationUp, 3000);
+    //});	
+>>>>>>> 37e393f0b2b5c71c98531464caddeceb828e172d
+
+        var interval = setInterval(animationUp, 3000);
+
+        //$('.innerContent').hover(function(){
+        //        clearInterval(interval);        
+        //        }, function(){
+        //   interval = setInterval(animationUp, 3000);
+        //});        
+
+<<<<<<< HEAD
+=======
+
+function animationUp() {
+    $('.item:first-of-type').animate({
+        marginTop: '-' + $('.item:first-of-type').outerHeight()
+  },1000,"swing",function(){
+	$('.item:first-of-type').css('margin-top','0').remove().clone().appendTo('.innerContent');
+  });//end animate
+}//end function
+
+function animationDown(){
+  $('.item:first-of-type').animate({
+      marginTop: '+' + $('.item:first-of-type').outerHeight()
+  },500,"swing",function(){
+	$('.item:first-of-type').css('margin-top','0');  
+	$('.item:last-of-type').remove().clone().prependTo('.innerContent');
+  });//end animate
+>>>>>>> 37e393f0b2b5c71c98531464caddeceb828e172d
+
+        $('#up').click(function () {
+            //        clearInterval(interval);
+            animationUp();
+        });
+
+        $('#down').click(function () {
+            //        clearInterval(interval);
+            animationDown();
+        });
+
+    });
+
+
+    function animationUp() {
+        $('.item:first-of-type').animate({
+            marginTop: '-' + $('.item:first-of-type').outerHeight()
+        }, 1000, "swing", function () {
+            $('.item:first-of-type').css('margin-top', '0').remove().clone().appendTo('.innerContent');
+        });//end animate
+    }//end function
+
+    function animationDown() {
+        $('.item:first-of-type').animate({
+            marginTop: '+' + $('.item:first-of-type').outerHeight()
+        }, 500, "swing", function () {
+            $('.item:first-of-type').css('margin-top', '0');
+            $('.item:last-of-type').remove().clone().prependTo('.innerContent');
+        });//end animate
+
+    }//end function
+
+
+</script>
+</head>
+<body>
+  
+        <input type="button" id="up" value="up">
+      <input type="button" id="down" value="down">
+  
+  <div class="ticker-wrapper">
+    <div class="innerContent">
+        <div class="item" id="one">
+               <img src="images/Pulse-of-Site-v2_03.png" >
+        </div>
+        <div class="item" id="two">
+           <img src="images/Pulse-of-Site-v2_05.png">
+        </div>
+        <div class="item" id="three">
+            <img src="images/Pulse-of-Site-v2_07.png">
+        </div>
+        <div class="item" id="four">
+           <img src="images/Pulse-of-Site-v2_09.png">
+        </div>
+        <div class="item" id="five">
+           <img src="images/Pulse-of-Site-v2_11.png">
+        </div>
+        <div class="item" id="six">
+         <img src="images/Pulse-of-Site-v2_13.png">
+        </div>
+        <div class="item" id="seven">
+         <img src="images/Pulse-of-Site-v2_14.png">
+        </div>
+        <div class="item" id="eight">
+         <img src="images/Pulse-of-Site-v2_15.png">
+        </div>
+         <div class="item" id="nine">
+         <img src="images/Pulse-of-Site-v2_17.png">
+         
+        </div>
+      
+    </div>
+      
+  </div>
+  
