@@ -1,17 +1,39 @@
 ﻿.ticker-wrapper {
-          width:300px;
-          height:388px;
-          position: relative;
-          overflow:hidden;
-      background: url(../images/Pulse-of-Site-v2_01.png) no-repeat;
-      padding-top:40px;
-      border:1px solid grey;
-        }
+    width:300px;
+    height:455px;
+    position: relative;
+    overflow:hidden;
+    background: url(../images/Pulse-of-Site-v2_01.png) no-repeat;
+    padding-top:40px;
+    border:1px solid grey;
+
+    }
         .innerContent {
 
           position:absolute;
-          width:100%;
+        top:60px;
       overflow:hidden;
-      height:351px;
+      height:375px;
       margin-top:14px;
         }
+
+.ticker-arrows 
+{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    position:absolute;
+    background: blue;
+    left:20px;
+  
+}
+
+#up {
+    top:39px;
+
+}
+
+#down
+{
+    top:449px;
+}

@@ -16,12 +16,14 @@
         });
 
 
-        $('#up').click(function () {
+        $('#up').click(function (e) {
+            e.preventDefault();
             clearInterval(interval);
             animationUp();
         });
 
-        $('#down').click(function () {
+        $('#down').click(function (e) {
+            e.preventDefault();
             clearInterval(interval);
             animationDown();
         });
@@ -60,23 +62,17 @@
 
         });//end animate
 
-        function adjustHeight() {
-
-        }
-
     }//end function
 
 
 </script>
 </head>
-<body style="">
+<body>
   
-        <input type="button" id="up" value="up">
-      <input type="button" id="down" value="down">
   
   <div class="ticker-wrapper">
+    <a href="" id="up" class="ticker-arrows "></a>
     <div class="innerContent" >
-        
        <div class="item" id="one" >
             <img src="images/Pulse-of-Site-v2_03.png">
         </div>
@@ -101,22 +97,12 @@
          <div class="item" id="eight">
          <img src="images/Pulse-of-Site-v2_15.png">
         </div>
+
         <div class="item" id="nine" >
          <img src="images/Pulse-of-Site-v2_17.png">
-         
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-         
-      
     </div>
-      
+      <a href="" id="down" class="ticker-arrows "></a>
   </div>
   
 
