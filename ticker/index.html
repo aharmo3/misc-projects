@@ -42,7 +42,7 @@
         var wrapperHeight = $('.item:nth-of-type(2)').outerHeight() + $('.item:nth-of-type(3)').outerHeight() + $('.item:nth-of-type(4)').outerHeight();
         $('.innerContent').css('height', wrapperHeight);
 
-        $('.item:first-of-type').animate({
+        $('.item:first-of-type').stop().animate({
             marginTop: '-' + $('.item:first-of-type').outerHeight()
         }, 1000, "swing", function () {
         });//end animate
@@ -55,7 +55,7 @@
         $('.innerContent').css('height', wrapperHeight);
 
         var marginTop = -1 * ($('.item:last-of-type').outerHeight());
-        $('.item:first-of-type').animate({
+        $('.item:first-of-type').stop().animate({
             marginTop: '0'
         }, 1000, "swing", function () {
             $('.item:last-of-type').remove().clone().prependTo('.innerContent').css('margin-top', marginTop);
