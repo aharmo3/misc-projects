@@ -23,13 +23,15 @@
     width:30px;
     height:30px;
     position:absolute;
-    background: blue;
+   /* background: blue;*/
     left:20px;
+    text-decoration:none;
   
 }
 
 #up {
     top:39px;
+    background-position:-160px -280px;
 
 }
 
