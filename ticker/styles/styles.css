@@ -6,36 +6,29 @@
     background: url(../images/Pulse-of-Site-v2_01.png) no-repeat;
     padding-top:40px;
     border:1px solid grey;
+}
+.ticker-wrapper .innerContent {
+    position:absolute;
+    top:60px;
+    overflow:hidden;
+    height:375px;
+    margin-top:14px;
+}
 
-    }
-        .innerContent {
-
-          position:absolute;
-        top:60px;
-      overflow:hidden;
-      height:375px;
-      margin-top:14px;
-        }
-
-.ticker-arrows 
-{
+.ticker-wrapper .ticker-arrows {
     display:inline-block;
     width:30px;
     height:30px;
     position:absolute;
-   /* background: blue;*/
     left:20px;
     text-decoration:none;
-  
 }
 
-#up {
+.ticker-wrapper #up {
     top:39px;
     background-position:-160px -280px;
-
 }
 
-#down
-{
+.ticker-wrapper #down {
     top:449px;
 }
